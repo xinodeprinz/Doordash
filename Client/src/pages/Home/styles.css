@@ -1,0 +1,63 @@
+.card-img-top {
+  border-radius: 0;
+}
+
+.errands .card-header {
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 25px;
+}
+
+.explore {
+  border-radius: 0;
+  text-transform: capitalize;
+  font-size: 20px;
+}
+
+.name {
+  color: var(--main-color);
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.town {
+  color: black;
+  font-size: 22px;
+}
+
+.chat {
+  border-radius: 0;
+  font-size: 18px;
+}
+
+.balance {
+  text-transform: capitalize;
+  background-color: var(--sec-color);
+  color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  padding-left: 1.5rem;
+}
+
+.balance h4 {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.balance div {
+  font-size: 20px;
+}
+
+.process {
+  text-transform: capitalize;
+  background-color: var(--main-color);
+  color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  padding-left: 1.5rem;
+}
+
+.process h4 {
+  font-size: 25px;
+  font-weight: bold;
+}

@@ -1,0 +1,108 @@
+@import url("../../globals.css");
+
+.sidebar {
+  background-color: var(--main-color) !important;
+  height: 100vh !important;
+  position: fixed !important;
+  width: inherit !important;
+  border-top-right-radius: 2rem !important;
+  border-bottom-right-radius: 2rem !important;
+  color: white !important;
+}
+
+.logo {
+  background-color: white;
+  padding: 0.5rem;
+  border-radius: 10px !important;
+  display: inline-block;
+  border-bottom: 2px solid var(--sec-color);
+}
+
+.logo-main {
+  text-align: center;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.profile {
+  width: 200px !important;
+  height: 200px !important;
+  border-radius: 50% !important;
+  border: 3px solid var(--sec-color) !important;
+}
+
+.manage {
+  border-radius: 50px !important;
+}
+
+.check {
+  background-color: green;
+  color: white;
+  border-radius: 50%;
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  position: absolute;
+  bottom: 0;
+  right: 5rem;
+}
+
+.links {
+  margin-left: 2.5rem;
+}
+
+.link {
+  display: inline-flex !important;
+  align-items: center !important;
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.link span {
+  margin-left: 0.7rem;
+}
+
+.link.active {
+  background-color: var(--hover-color);
+  padding: 1rem 5rem 1rem 2rem;
+  border-radius: 10px;
+}
+
+.search .input-group-text {
+  border-top-left-radius: 40% !important;
+  border-bottom-left-radius: 40% !important;
+  /* background-color: white !important;
+  color: var(--main-color) !important; */
+  font-size: 25px !important;
+}
+
+.search input {
+  border-top-right-radius: 20px !important;
+  border-bottom-right-radius: 20px !important;
+  border-left: 0 !important;
+}
+
+.search {
+  width: 50% !important;
+}
+
+.dash-margin {
+  margin-top: 2.6rem;
+}
+
+.logout {
+  border-radius: 20px;
+}
+
+.time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main-color);
+  color: white;
+  border-radius: 20px;
+  padding: 0.6rem 1rem;
+  font-size: 17px;
+  font-weight: 600;
+}
