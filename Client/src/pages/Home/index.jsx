@@ -1,10 +1,11 @@
 import Layout from "../../components/Layout";
 import "./styles.css";
-import Empty from "../../images/empty.jpg";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { useEffect, useState } from "react";
 import axios from "../../components/axios";
+import Errand from "../../components/Errand";
+import Vendor from "../../components/Vendor";
 
 const Home = () => {
   const user = useSelector((state) => state.user);
@@ -60,20 +61,7 @@ const Home = () => {
           <div className="row errands">
             {popularErrands.map((errand, key) => (
               <div className="col-md-6 col-lg-3 mb-3" key={key}>
-                <div className="card shadow h-100">
-                  <div className="card-header">{errand.name}</div>
-                  <img
-                    src={`${process.env.REACT_APP_BASE_URL}/${errand.photo}`}
-                    alt={errand.name}
-                    className="card-img-top"
-                  />
-                  <div className="card-body">
-                    <p className="card-text">{errand.description}</p>
-                    <Link className="btn btn-sec w-100 explore" to={"/users"}>
-                      explore
-                    </Link>
-                  </div>
-                </div>
+                <Errand errand={errand} />
               </div>
             ))}
           </div>
@@ -86,24 +74,7 @@ const Home = () => {
             <div className="row">
               {popularVendors.map((vendor, key) => (
                 <div className="col-md-6 col-lg-3 mb-3" key={key}>
-                  <div className="card shadow h-100">
-                    <img
-                      src={
-                        vendor.photo
-                          ? `${process.env.REACT_APP_BASE_URL}/${vendor.photo}`
-                          : Empty
-                      }
-                      alt={vendor.name}
-                      className="card-img-top"
-                    />
-                    <div className="card-body text-center text-capitalize">
-                      <h4 className="name">{vendor.name}</h4>
-                      <p className="town">{vendor.address}</p>
-                      <button className="btn btn-sec w-100 chat">
-                        chat now
-                      </button>
-                    </div>
-                  </div>
+                  <Vendor vendor={vendor} />
                 </div>
               ))}
             </div>

@@ -43,6 +43,10 @@ export const updateUserSchema = Joi.object({
     .optional()
     .error(new Error("Provide a valid phone number")),
   address: Joi.string().optional().error(new Error("Provide a valid address.")),
+  whatsapp: Joi.string()
+    .uri()
+    .optional()
+    .error(new Error("Provide a valid whatsapp link.")),
   password: Joi.string()
     .min(5)
     .optional()
@@ -62,4 +66,20 @@ export const paymentSchema = Joi.object({
     .max(1000000)
     .required()
     .error(new Error("Provide an amount in the range 10 to 1,000,000")),
+});
+
+export const chatSchema = Joi.object({
+  receiver: Joi.string()
+    .required()
+    .length(24)
+    .error(new Error("Provide a valid receiver.")),
+  message: Joi.string().required().error(new Error("Provide a valid message.")),
+});
+
+export const sendMoneySchema = Joi.object({
+  receiverId: Joi.string()
+    .required()
+    .length(24)
+    .error(new Error("Provide a valid receiver.")),
+  amount: Joi.number().required().error(new Error("Provide a valid amount.")),
 });

@@ -2,7 +2,7 @@ import Layout from "../../components/Layout";
 import "./styles.css";
 import axios from "../../components/axios";
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import Errand from "../../components/Errand";
 
 const Errands = () => {
   const [errands, setErrands] = useState([]);
@@ -27,20 +27,7 @@ const Errands = () => {
       <div className="row errands">
         {errands.map((errand, key) => (
           <div className="col-md-6 col-lg-3 mb-3" key={key}>
-            <div className="card shadow h-100">
-              <div className="card-header">{errand?.name}</div>
-              <img
-                src={`${process.env.REACT_APP_BASE_URL}/${errand?.photo}`}
-                alt={errand?.name}
-                className="card-img-top"
-              />
-              <div className="card-body">
-                <p className="card-text">{errand?.description}</p>
-                <Link to={"/users"} className="btn btn-sec w-100 explore">
-                  explore
-                </Link>
-              </div>
-            </div>
+            <Errand errand={errand} />
           </div>
         ))}
       </div>

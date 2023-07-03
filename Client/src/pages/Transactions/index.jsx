@@ -46,7 +46,7 @@ const Transactions = () => {
                   <td>
                     {["deposit", "withdrawal"].includes(trans.type)
                       ? "-"
-                      : trans.userId.name}
+                      : trans?.vendor?.name}
                   </td>
                   <td>
                     {new Date(trans.createdAt).toLocaleDateString("en-GB")}

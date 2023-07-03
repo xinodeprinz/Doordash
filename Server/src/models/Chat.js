@@ -1,33 +1,30 @@
 import { Schema, model } from "mongoose";
 
-const transactionSchema = new Schema(
+const chatSchema = new Schema(
   {
-    type: {
+    message: {
       type: String,
       required: true,
     },
-    amount: {
-      type: Number,
-      required: true,
-    },
-    method: {
-      type: String,
-      required: true,
-    },
-    userId: {
+    sender: {
       type: Schema.Types.ObjectId,
       ref: "User",
       required: true,
     },
-    vendor: {
+    receiver: {
       type: Schema.Types.ObjectId,
       ref: "User",
+      required: true,
+    },
+    seen: {
+      type: Boolean,
       required: false,
+      default: false,
     },
   },
   { timestamps: true }
 );
 
-const Transaction = model("Transaction", transactionSchema);
+const Chat = model("Chat", chatSchema);
 
-export default Transaction;
+export default Chat;

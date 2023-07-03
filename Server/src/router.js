@@ -1,12 +1,19 @@
 import { Router } from "express";
 import { login, logout, register } from "./controllers/AuthController.js";
 import {
+  getChats,
+  getMessages,
+  sendMessage,
+  updateChat,
+} from "./controllers/ChatController.js";
+import {
   createErrand,
   errands,
   popularErrands,
 } from "./controllers/ErrandController.js";
 import {
   deposit,
+  sendMoney,
   transactions,
   withdraw,
 } from "./controllers/PaymentController.js";
@@ -42,5 +49,12 @@ router.get("/vendors/:address", verifyToken, vendorsByAddress);
 router.get("/transactions", verifyToken, transactions);
 router.post("/deposit", verifyToken, deposit);
 router.post("/withdraw", verifyToken, withdraw);
+router.post("/send-money", verifyToken, sendMoney);
+
+// Chat Routes
+router.post("/send-message", verifyToken, sendMessage);
+router.get("/chats", verifyToken, getChats);
+router.get("/messages/:receiverId", verifyToken, getMessages);
+router.patch("/chat/:id/update", verifyToken, updateChat);
 
 export default router;

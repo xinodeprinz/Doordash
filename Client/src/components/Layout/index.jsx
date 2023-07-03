@@ -21,6 +21,8 @@ import { clearUser, setUser as setStoreUser } from "../../redux/userSlice";
 
 const Layout = ({ children }) => {
   const [user, setUser] = useState(useSelector((state) => state.user));
+  const [time, setTime] = useState(new Date());
+
   const dispatch = useDispatch();
   const navigate = useNavigate();
   // console.log(user);
@@ -52,6 +54,14 @@ const Layout = ({ children }) => {
 
   useEffect(() => {
     if (!user) getUser();
+
+    const timerID = setInterval(() => {
+      setTime(new Date());
+    }, 1000);
+
+    return () => {
+      clearInterval(timerID);
+    };
   }, []);
 
   const getUser = async () => {
@@ -191,7 +201,15 @@ const Layout = ({ children }) => {
             </div>
             <div className="time">
               <FaClock />
-              <span className="ms-2">15:30 june 29, 2023</span>
+              <span className="ms-2">
+                {time.toLocaleString("en-US", {
+                  hour: "2-digit",
+                  minute: "2-digit",
+                  month: "long",
+                  day: "numeric",
+                  year: "numeric",
+                })}
+              </span>
             </div>
             <button
               className="btn btn-outline-main btn-lg logout px-4"

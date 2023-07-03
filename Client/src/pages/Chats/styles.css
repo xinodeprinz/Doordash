@@ -33,14 +33,16 @@
   justify-content: space-between;
 }
 
-.person:hover {
+.person:hover,
+.active {
   cursor: pointer;
   background-color: var(--hover-color);
   padding: 0.5rem;
   border-radius: 10px;
 }
 
-.person:hover h4 {
+.person:hover h4,
+.active h4 {
   color: white;
 }
 
@@ -58,7 +60,7 @@
 .count {
   background-color: var(--sec-color);
   display: inline-block;
-  padding: 0.2rem 0.4rem;
+  padding: 0.2rem 0.5rem;
   border-radius: 50%;
   font-size: 14px;
 }

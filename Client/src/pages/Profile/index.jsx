@@ -5,6 +5,7 @@ import {
   FaLock,
   FaPhoneAlt,
   FaUser,
+  FaWhatsapp,
 } from "react-icons/fa";
 import { useSelector } from "react-redux";
 import Layout from "../../components/Layout";
@@ -20,6 +21,7 @@ const Profile = () => {
     email: initialUser?.email,
     phone: initialUser?.phone,
     address: initialUser?.address,
+    whatsapp: initialUser?.whatsapp || "",
     password: "",
   });
 
@@ -114,20 +116,36 @@ const Profile = () => {
                       </select>
                     </div>
                   </div>
-                </div>
-
-                <div className="input-group input-group-lg mb-3">
-                  <div className="input-group-text">
-                    <FaLock className="icon" />
+                  <div className="col-md-6 mb-3">
+                    <div className="input-group input-group-lg">
+                      <div className="input-group-text">
+                        <FaWhatsapp className="icon" />
+                      </div>
+                      <input
+                        type="text"
+                        className="form-control"
+                        placeholder="Whatsapp Link"
+                        id="whatsapp"
+                        value={user.whatsapp}
+                        onChange={handleInput}
+                      />
+                    </div>
                   </div>
-                  <input
-                    type="password"
-                    className="form-control"
-                    placeholder="Password"
-                    id="password"
-                    value={user.password}
-                    onChange={handleInput}
-                  />
+                  <div className="col-md-6 mb-3">
+                    <div className="input-group input-group-lg">
+                      <div className="input-group-text">
+                        <FaLock className="icon" />
+                      </div>
+                      <input
+                        type="password"
+                        className="form-control"
+                        placeholder="Password"
+                        id="password"
+                        value={user.password}
+                        onChange={handleInput}
+                      />
+                    </div>
+                  </div>
                 </div>
 
                 <div className="row">

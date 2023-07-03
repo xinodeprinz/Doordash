@@ -1,13 +1,13 @@
 import Errors from "http-errors";
 import Transaction from "../models/Transaction.js";
 import { PaymentOperation, Signature } from "@hachther/mesomb";
-import { paymentSchema } from "../schemas.js";
+import { paymentSchema, sendMoneySchema } from "../schemas.js";
 import User from "../models/User.js";
 
 export const transactions = async (req, res, next) => {
   try {
     const transactions = await Transaction.where("userId", req.userId).populate(
-      "userId"
+      "vendor"
     );
     return res.json(transactions);
   } catch (err) {
@@ -104,4 +104,30 @@ const getConfig = () => {
     secretKey: process.env.MESOMB_SECRET_KEY,
   });
   return config;
+};
+
+export const sendMoney = async (req, res, next) => {
+  try {
+    const value = await sendMoneySchema.validateAsync(req.body);
+    const user = await User.findById(req.userId);
+    const receiver = await User.findById(value.receiverId);
+    if (user.balance < value.amount) {
+      throw new Error("Insufficient account balance.");
+    }
+    receiver.balance += Number(value.amount);
+    user.balance -= Number(value.amount);
+    await receiver.save();
+    await user.save();
+    const transaction = new Transaction({
+      type: "transfer",
+      amount: value.amount,
+      method: "platform",
+      userId: req.userId,
+      vendor: value.receiverId,
+    });
+    await transaction.save();
+    return res.json({ message: "Money transferred successfully." });
+  } catch (err) {
+    next(new Errors(422, err));
+  }
 };
