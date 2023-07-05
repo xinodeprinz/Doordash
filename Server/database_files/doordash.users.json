@@ -1,0 +1,177 @@
+[{
+  "_id": {
+    "$oid": "64a4e25eb0dcd8ff24233051"
+  },
+  "name": "Nadia Asong",
+  "email": "nadiaasong@gmail.com",
+  "phone": "671222598",
+  "address": "Buea",
+  "balance": 3200,
+  "type": "client",
+  "password": "$2b$10$U1kPCZC4DnuP1aw.LdlaD.8Oj8FfgNxtMojDZXqBC.WSlXayZwobW",
+  "createdAt": {
+    "$date": "2023-07-05T03:24:14.996Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-05T05:22:23.628Z"
+  },
+  "__v": 0,
+  "photo": "profiles/naovcsCySp1HHI3IdZBWNKNJeA0T2bySJW0SMfPmNCIKB43ztY.jpg"
+},
+{
+  "_id": {
+    "$oid": "64a4f8d1b0dcd8ff2423318a"
+  },
+  "name": "Ashu Brian",
+  "email": "ashubrian@gmail.com",
+  "phone": "689876890",
+  "address": "Buea",
+  "balance": 0,
+  "type": "vendor",
+  "password": "$2b$10$YhochbvLZhKgnpq.K7C7HeJbJ.0JG/nG7oykOu1u33ak2prmUAgSy",
+  "createdAt": {
+    "$date": "2023-07-05T05:00:01.073Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-05T05:24:42.360Z"
+  },
+  "__v": 0,
+  "photo": "profiles/uekHha7KItEYQneywv8W01NquEd0oaKIDm2kyosUqjx0G3inHJ.jpg"
+},
+{
+  "_id": {
+    "$oid": "64a4f92ab0dcd8ff242331a0"
+  },
+  "name": "Lizette Atabong",
+  "email": "lizette@gmail.com",
+  "phone": "689876891",
+  "address": "Limbe",
+  "balance": 0,
+  "type": "vendor",
+  "password": "$2b$10$rkw8.uf.miBafwjW9btZF.Url6dCn7LCj3sxF/mB3gnboiEKgYNCq",
+  "createdAt": {
+    "$date": "2023-07-05T05:01:30.314Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-05T05:44:45.091Z"
+  },
+  "__v": 0,
+  "photo": "profiles/SXR0JOuYQJcbrmurwk7yNmWD8e2EKmmlIwVtLcAJH6wDywivmJ.jpg"
+},
+{
+  "_id": {
+    "$oid": "64a4f9d7b0dcd8ff242331b2"
+  },
+  "name": "Musa Simon",
+  "email": "musa@gmail.com",
+  "phone": "689876892",
+  "address": "Buea",
+  "balance": 0,
+  "type": "vendor",
+  "password": "$2b$10$R8G/2OWvFcDVmUYZS58bB.e.Ye9/oPMBU0vNITiuD54qT84It3huO",
+  "createdAt": {
+    "$date": "2023-07-05T05:04:23.498Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-05T05:46:23.810Z"
+  },
+  "__v": 0,
+  "photo": "profiles/1Uvn5AwTj27COiJ3K5D0V4MX73vOtGlLjzNjYHGyRFOyuLpsUf.jpg"
+},
+{
+  "_id": {
+    "$oid": "64a4fa0fb0dcd8ff242331b4"
+  },
+  "name": "Johnson Afang",
+  "email": "johnson@gmail.com",
+  "phone": "689876893",
+  "address": "Bamenda",
+  "balance": 0,
+  "type": "vendor",
+  "password": "$2b$10$U/W.WRoVYDQZyK6NZycdRuzczNauOVa/gcHIihlBsECcAiJcdgqwi",
+  "createdAt": {
+    "$date": "2023-07-05T05:05:19.693Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-05T05:05:19.693Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64a4fbb3b0dcd8ff242331c6"
+  },
+  "name": "Ismael Tajong",
+  "email": "ismael@gmail.com",
+  "phone": "689876894",
+  "address": "Buea",
+  "balance": 0,
+  "type": "vendor",
+  "password": "$2b$10$94LJvic6juyK1yC.wobPxuDkvFsXCJCME4cVtDHIzpqqOkHKRuHde",
+  "createdAt": {
+    "$date": "2023-07-05T05:12:19.974Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-05T05:51:09.490Z"
+  },
+  "__v": 0,
+  "photo": "profiles/tzmCz4aU5KBIfFubdUUlJG7O25kVeUWkNAVhGQxVb54yOQs3VU.jpg"
+},
+{
+  "_id": {
+    "$oid": "64a4fc43b0dcd8ff242331f7"
+  },
+  "name": "Njong Lucas",
+  "email": "njong@gmail.com",
+  "phone": "689876895",
+  "address": "Buea",
+  "balance": 0,
+  "type": "vendor",
+  "password": "$2b$10$mQiseCCSnjp7reGW0b9lfex09int2Wo8bdw.J5BUgne5Qo3j/QcRW",
+  "createdAt": {
+    "$date": "2023-07-05T05:14:43.255Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-05T05:54:10.778Z"
+  },
+  "__v": 0,
+  "photo": "profiles/zYFspzMj06xTrubHi1KD8UrFagjXteVVa67NzzUFWdtKE90R4t.jpg"
+},
+{
+  "_id": {
+    "$oid": "64a4fcc3b0dcd8ff24233219"
+  },
+  "name": "Julliet Fuanyi",
+  "email": "julliet@gmail.com",
+  "phone": "689876896",
+  "address": "Bafoussam",
+  "balance": 0,
+  "type": "vendor",
+  "password": "$2b$10$rTKC.ymQX6.iMX033RiSQOP2muLYyrBxaGpnZutGqYlQp4rzJDVbq",
+  "createdAt": {
+    "$date": "2023-07-05T05:16:51.403Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-05T05:16:51.403Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64a4fd04b0dcd8ff2423322b"
+  },
+  "name": "Rene Asong",
+  "email": "rene@gmail.com",
+  "phone": "689876897",
+  "address": "Limbe",
+  "balance": 0,
+  "type": "vendor",
+  "password": "$2b$10$uNk51QA7xKyjiraReib46uvg49Ku6rUSh94FTHbKaqDKREMamDDni",
+  "createdAt": {
+    "$date": "2023-07-05T05:17:56.281Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-05T05:17:56.281Z"
+  },
+  "__v": 0
+}]

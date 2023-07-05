@@ -1,0 +1,28 @@
+.name {
+  color: var(--main-color);
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.town {
+  color: black;
+  font-size: 22px;
+}
+
+.chat {
+  border-radius: 0;
+  font-size: 18px;
+}
+
+.filter {
+  padding: 0.5rem 0.8rem;
+  border-color: var(--main-color);
+  color: var(--main-color);
+  background-color: inherit;
+  border-radius: 10px !important;
+  text-transform: capitalize;
+}
+
+.filter:focus {
+  outline: 0;
+}

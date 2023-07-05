@@ -1,0 +1,4 @@
+- Grocery
+- Laundary
+- Drop-off
+- Meal

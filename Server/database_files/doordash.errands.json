@@ -1,0 +1,120 @@
+[{
+  "_id": {
+    "$oid": "64a4e68eb0dcd8ff24233096"
+  },
+  "name": "grocery delivery",
+  "description": "Get your groceries delivered straight to your doorstep with convenient grocery delivery services. Shop for your favorite foods online and have them delivered to you in as little as a few hours. Enjoy the convenience of avoiding the hassle of grocery shopping and save time by letting someone else do the work for you.",
+  "photo": "errands/n7oH3krnSRFTZOWpJWX8FART54WOJlESHhu7xEBwjt9U9zHuje.jpg",
+  "createdAt": {
+    "$date": "2023-07-05T03:42:06.062Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-05T03:42:06.062Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64a4e944b0dcd8ff242330d0"
+  },
+  "name": "Laundry Pickup",
+  "description": "Say goodbye to laundry day hassle with convenient laundry pickup services. Simply schedule a pickup time and a professional cleaner will collect your laundry from your doorstep, saving you time and effort. Your clothes will be cleaned and returned to you fresh and folded, ready to wear. Enjoy the convenience of never having to worry about laundry again.",
+  "photo": "errands/lRqFaSbSMIdotkTLeDKGxTv21XOSY9fcXaSnqT8R7oDSgbEqog.jpg",
+  "createdAt": {
+    "$date": "2023-07-05T03:53:40.347Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-05T03:53:40.347Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64a4ebf2b0dcd8ff242330ee"
+  },
+  "name": "drop-off services",
+  "description": "Drop-off services offer a convenient way to quickly and easily complete tasks such as laundry, dry cleaning, and parcel shipping. Simply bring your items to the designated drop-off location and a professional will take care of the rest, saving you time and hassle. Enjoy the peace of mind that comes with knowing your tasks are being handled efficiently and professionally.",
+  "photo": "errands/gdLS2eBdFczi8BoEvBdeTd0Mn01RQiLGPBsBsYazfQrpFLY654.jpg",
+  "createdAt": {
+    "$date": "2023-07-05T04:05:06.320Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-05T04:05:06.320Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64a4ed49b0dcd8ff2423310c"
+  },
+  "name": "meal delivery",
+  "description": "Enjoy delicious and nutritious meals delivered right to your doorstep with convenient meal delivery services. Choose from a variety of cuisines and dietary options, place your order online, and have your meals delivered in as little as a few hours. Save time and effort by letting someone else do the cooking and enjoy the convenience of healthy and flavorful meals without leaving your home.",
+  "photo": "errands/4acILtRO76TFXq2DTDTqJeseFA5Ro8ihqHg7CeDlR9NbbfsrGf.jpg",
+  "createdAt": {
+    "$date": "2023-07-05T04:10:49.702Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-05T04:10:49.702Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64a4edd1b0dcd8ff2423312a"
+  },
+  "name": "Bank Deposit",
+  "description": "Make banking easy and convenient with bank deposit services. Simply visit a bank branch or ATM, insert your deposit, and your funds will be credited to your account. Enjoy the peace of mind that comes with knowing your money is being securely and efficiently deposited, without the hassle of waiting in long lines or dealing with paperwork.",
+  "photo": "errands/RZ1yJGw7uG0F4VBkCRhxy1rkVlgpXwOmHDXlM6WmjLslifwxdI.jpg",
+  "createdAt": {
+    "$date": "2023-07-05T04:13:05.041Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-05T04:13:05.041Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64a4eff0b0dcd8ff2423314c"
+  },
+  "name": "Car Maintenance",
+  "description": "Keep your car running smoothly and safely with regular car maintenance services. This includes tasks such as oil changes, tire rotations, brake inspections, and tune-ups. Schedule appointments with a trusted mechanic or take advantage of mobile services that come to you. Enjoy the peace of mind that comes with knowing your car is well-maintained and running at its best.",
+  "photo": "errands/J8hVGJXVf1Qn1puYsazVmyrXdq3qtwzTYw6xIbodyDZFjC5Jzl.jpg",
+  "createdAt": {
+    "$date": "2023-07-05T04:22:08.287Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-05T04:22:08.287Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64a4f665b0dcd8ff2423315e"
+  },
+  "name": "Home Repairs",
+  "description": "Maintain the comfort and safety of your home with professional home repair services. From minor fixes to major renovations, skilled professionals can handle a range of tasks such as plumbing, electrical work, HVAC repairs, painting, and more. Schedule appointments with trusted contractors or utilize handyman services to take care of smaller tasks. Enjoy the peace of mind that comes with knowing your home is in good hands.",
+  "photo": "errands/bVPoDqMxiLIOEudLNRmTpyzxIcno8AINGBHSIu8JTR1tu8HGnt.jpg",
+  "createdAt": {
+    "$date": "2023-07-05T04:49:41.796Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-05T04:49:41.796Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64a4f744b0dcd8ff24233178"
+  },
+  "name": "Gift Shopping",
+  "description": "Find the perfect gift for any occasion with convenient gift shopping services. Browse online or visit a local store to find a wide variety of thoughtful and unique gift options. Take advantage of gift wrapping and delivery services to make the process even easier. Enjoy the convenience of finding the perfect gift without the hassle of searching through endless options.",
+  "photo": "errands/9vbWaFPIRx4Mmh6Bd2HMwKomEx5z5pHKehVFwpxGnnk9OkBBrt.jpg",
+  "createdAt": {
+    "$date": "2023-07-05T04:53:24.085Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-05T04:53:24.085Z"
+  },
+  "__v": 0
+}]

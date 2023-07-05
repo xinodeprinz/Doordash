@@ -1,0 +1,11 @@
+@import url("../../globals.css");
+
+th {
+  background-color: var(--main-color) !important;
+  color: white !important;
+  text-transform: capitalize;
+}
+
+table {
+  text-transform: capitalize !important;
+}

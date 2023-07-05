@@ -1,0 +1,46 @@
+@import url("../../globals.css");
+
+.btn-whatsapp,
+.btn-chat,
+.btn-money {
+  display: flex;
+  width: 100%;
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0;
+  font-size: 20px;
+}
+
+.btn-whatsapp,
+.btn-whatsapp:hover {
+  background-color: #25d366;
+  color: white;
+}
+
+.btn-chat,
+.btn-chat:hover {
+  background-color: var(--main-color);
+  color: white;
+}
+
+.btn-money,
+.btn-money:hover {
+  background-color: var(--sec-color);
+  color: white;
+}
+
+.modal-title {
+  text-transform: capitalize;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.modal-title span:first-child {
+  color: var(--main-color);
+}
+
+.modal-title span:last-child {
+  color: var(--sec-color);
+}

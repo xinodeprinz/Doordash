@@ -1,0 +1,22 @@
+.card-img-top {
+  border-radius: 0;
+  height: 300px;
+}
+
+.errands .card-header {
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 25px;
+}
+
+.explore {
+  border-radius: 0;
+  text-transform: capitalize;
+  font-size: 20px;
+  position: absolute;
+  bottom: 10px;
+}
+
+.body {
+  position: relative;
+}
